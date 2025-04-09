@@ -14,7 +14,7 @@ export default function CategoryPage() {
 
   useEffect(() => {
     if (category) {
-      fetch(`https://qr-menu-orpin.vercel.app/api/products/${category}`)
+      fetch(`https://qrmenu-mu.vercel.app/api/products/${category}`)
         .then((res) => res.json())
         .then((data) => {
           console.log("Gelen ürünler:", data);

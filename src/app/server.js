@@ -24,7 +24,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // QR kodu oluşturma route'u
 app.post("/api/generate-qr", (req, res) => {
-  const url = "https://qr-menu-orpin.vercel.app";
+  const url = "https://qrmenu-mu.vercel.app/";
   const qrPath = path.join(__dirname, "uploads", "qr-menu.png");
 
   QRCode.toFile(
